@@ -102,6 +102,7 @@ h3 {
   background-size: 0% 100%;
   background-repeat: no-repeat;
   background-position: left center;
+  background-clip: text;
   -webkit-background-clip: text;
   /* -webkit-text-fill-color: transparent; */
   transition: all 0.4s ease;
