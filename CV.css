@@ -40,6 +40,11 @@ nav {
 
 .nav-link {
   color: #666666;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover{
+  color:#ff6600;
 }
 
 /* Main */
@@ -98,7 +103,7 @@ h3 {
   background-position: left center;
   -webkit-background-clip: text;
   /* -webkit-text-fill-color: transparent; */
-  transition: all 0.25s ease;
+  transition: all 0.4s ease;
 }
 
 h3:hover {
@@ -128,9 +133,12 @@ section {
   /*   border-radius: 25px; */
   border-radius: 50%;
   /*   50%代表面積占總一半，此時為圓形 */
+  border: transparent 10px solid;
+  transition: all 0.4s ease-out;
 }
 
 .avatar-img:hover {
+  transform: scale(1.1);
   border: #ff6600 10px solid;
 }
 
@@ -261,9 +269,9 @@ hr {
 .programming-cert {
   color: #333333;
   text-decoration: none;
+  transition: all .25s;
 }
 
 .programming-cert:hover {
   color: #ff6600;
-  transition: all .25s;
 }
