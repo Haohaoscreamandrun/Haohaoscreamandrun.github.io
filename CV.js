@@ -1,6 +1,8 @@
 'use strict'
 //Selectors
 const experience = document.querySelector('.experience')
+const personalInfo = document.querySelector('.personal-info')
+const myName = document.querySelector('.first-name')
 
 //Data storage, new element goes on top
 const expArray = [{
@@ -11,7 +13,7 @@ const expArray = [{
     'Set goals, arrange field trials, coordinate submissions of global new active Adavelt® and other fungicides.',
     'Manage 30+ license renewal, sourcing and other actions according to global LER projects.',
     'Build relations with government officials and customer while proactively leading conversations.']
-},{
+}, {
   title: 'Import tolerance & Regulatory specialist',
   company: 'BASF Taiwan CO., LTD.',
   duration: '2020.2 - 2021.8',
@@ -19,7 +21,7 @@ const expArray = [{
     'Product stewardship, dossier submission and license maintenance for Agriculture Solutions.',
     'Regulatory advocacy with Croplife Asia and incident management with regulatory issue.',
     'Managing the import tolerance application, risk-cup calculation and global negotiation.']
-},{
+}, {
   title: 'Field trial Manager',
   company: 'TECHS TECH CO., LTD.',
   duration: '2018.10 - 2020.1',
@@ -30,11 +32,11 @@ const expArray = [{
 }]
 
 //Render Function
-function experienceRender(array){
+function experienceRender(array) {
   let rawHTML = ''
   array.forEach(job => {
     rawHTML +=
-    `
+      `
     <div class="experience-item">
         <h3 class="job-title">${job.title}</h3>
         <span class="company">
@@ -47,19 +49,47 @@ function experienceRender(array){
         </span>
         <ul>
     `
-    element.JD.forEach(description =>{
+    job.JD.forEach(description => {
       rawHTML +=
-      `
+        `
       <li>${description}</li>
       `
     })
     rawHTML +=
-    `
+      `
       </ul>
     `
   })
   return rawHTML;
 }
 
+// Function of name change
+function hoverName() {
+  myName.innerText = 'Jimmy'
+  myName.classList.add('hover-name')
+}
+
+function originalName() {
+  myName.innerText = 'Hao'
+  myName.classList.remove('hover-name')
+}
+
 //Job Render
 experience.innerHTML = experienceRender(expArray);
+
+//Change text when hover
+['mouseover','touchmove'].forEach(fire=>{
+  personalInfo.addEventListener(fire, event => {
+  if (event.target.classList[0] === "avatar-img"){
+    hoverName();
+  } 
+})
+})
+
+['mouseout','touchend'].forEach(fire=>{
+  personalInfo.addEventListener(fire, event => {
+  if (event.target.classList[0] === "avatar-img") {
+    originalName();
+  }
+})
+})

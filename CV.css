@@ -43,7 +43,8 @@ nav {
   transition: all 0.2s ease;
 }
 
-.nav-link:hover{
+.nav-link:hover,
+.nav-link:active {
   color:#ff6600;
 }
 
@@ -106,7 +107,8 @@ h3 {
   transition: all 0.4s ease;
 }
 
-h3:hover {
+h3:hover
+h3:active {
   background-size: 100% 100%;
   color: transparent;
 }
@@ -137,16 +139,34 @@ section {
   transition: all 0.4s ease-out;
 }
 
-.avatar-img:hover {
+.avatar-img:hover,
+.avatar-img:active {
   transform: scale(1.1);
   border: #ff6600 10px solid;
 }
 
-
 .name {
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.first-name, .last-name {
+  width: 49%;
   font-size: 32px;
   margin: 20px 0;
+  transition: color 0.3s ease;
+}
+
+.first-name{
+  text-align: end;
+}
+
+.last-name {
+  text-align: start;
+}
+
+.hover-name {
+  color: #ff6600;
 }
 
 .social-media {
@@ -228,12 +248,15 @@ div.title {
   display: flex;
   /*   因為 flex 排列的預設狀態就是水平排列，注意每個子元素是緊貼，而且容器的空間被全部分配： */
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .skill,
 .certificate {
   /*   outline: 2px solid blue; */
-  width: 30%;
+  flex-basis: calc(33.33% - 20px);
+  width: calc(33.33% - 20px);
+  min-width: 170px;
 }
 
 .skill-name,
@@ -272,6 +295,7 @@ hr {
   transition: all .25s;
 }
 
-.programming-cert:hover {
+.programming-cert:hover,
+.programming-cert:active {
   color: #ff6600;
 }
