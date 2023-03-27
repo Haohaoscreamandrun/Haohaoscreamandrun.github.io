@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="CV.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/698455ed47.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+<header>
+  <nav>
+    <!--navigator as a container, then apply CSS on this layer avoiding messing with component-->
+    <span class="nav-title">
+      Curriculum Vitae
+    </span>
+    <!--span is an hisotrical tag without meaning or default CSS, same as div tag. However, unlike span, div will take a row.-->
+    <a href="#" class="nav-link" onclick="window.print()">
+      <i class="fa-solid fa-print"></i>
+      <!--i means italic, but nowadays it's used to mark a icon-->
+    </a>
+  </nav>
+</header>
+<main>
+  <section class="personal-info">
+    <div class="avatar">
+      <!--We tend to wrap img with a div cause img doesn't take a row-->
+      <img class="avatar-img"
+        src="https://lh3.googleusercontent.com/bnYKCcWAFYEBoT3zLOIUMFikAL_6kOHu1gPOkcs9mU_jaABwHfMroZ3ipZZOKBK1hoOgeqjx5wuBE7sxVniO6MJ5s5QNKqlt9vQVZeZQlLWwPAChjYFbTrVwIyonD_5tvypT_Z8Kyo546CrqhR3eL_0XeuZc8CsEgEIrXMegWstzxU0uLY3kVSFOd9UjZ1YlTLNeY1f92KGJyQAGSVivPm3HFNk4g7u9hdmdvgA3bXal_FYsKqgx6-7pemLXKfJUIBjtQENC5cTHn-sjh5tnfpfE08XHRaEeRCW6d1mmMW-W06MNh7u0G4Pi3VF5dnuTGDDAl_qa8ZhUmbY7dNX3gbwnOKQESL4tKDc5gDHqH_Xkza1KGBgoNDgOG3SQC3X3vNeAEHBR_9oOR5tNMMgvVvPWGXGxzaSpBmOUfeYz3dqu9y4eBqxGaFHXDVn1sMtpwxtn-uz9MMmZsqoIH3tLJQFhIPOvQaKJGjMi1fHn7pZs5aX7k2LSblU-kb0f4-RnX6WZFNK4JQD8gztJ8lphpaQM8fb247atU9QSH_a3mBkeU2XGYELTj4LOH59jFMuzO8jwXDaL9NtI6BJK67fgDwhyoDIog8VWwE-RPr5GSfpMMcrerAfkbTadRbSgqGW_h_9BZmUmGDbQUxNZBslxTMwkWG-MrOUj5EC15ajyejocMXfPyXdmnVyFaD6KH6AE_7zDhuG6n98-gN-5AyNJFZwYjw-jrWnlYO_mPQJ1fDRszXFpedhIqSqTAQHkQJfpUas2cvQqGurXB1Q5kbXH_vLwnJgnyePr8yG0mvhijXnJFTNCfJ5CUeNZomKrNIMu__HmGRIiS4CDoJWN8gqAJmEjb-78ekZuRHM1fxPdN2gMsZ32uunPBLnYu3rLWQ-WO34OtOEs_XqyPlrf9SGNFh98pLeLtHsTEVpd77_BmNnv476F8lTH3pyqwWVd64Dxmief7-AU0YuE-1O8HQ=w1339-h1261-no?authuser=0"
+        alt="" width="150">
+      <!--it's a random fake photo website for frontend designer. img圖片/hr水平線/br斷行 can't serve as a container, therefore won't need a correspond tag.-->
+    </div>
+    <h1 class="name">
+      Hao Chen
+    </h1>
+    <div class="social-media">
+      <a class="social-media-link" href="https://www.facebook.com/profile.php?id=100000128530085" target="_blank">
+        <i class="fa-brands fa-square-facebook"></i>
+      </a>
+      <a class="social-media-link" href="https://www.linkedin.com/in/hao-chen-804a8315a/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a class="social-media-link" href="mailto:j842671395@google.com" target="_blank">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+    <div class="title">
+      RA | Pesticide Manager | Back-End Dev. To-be
+    </div>
+    <p class="description">
+      Professional regulatroy specialist with world leading companies experience of chemical registration, post-market
+      stewardship and cross-functional communication. Comprehansive knowledge on plant-breeding, fertilizers and crop
+      protection chemicals. Self-driven person with strong motivation to become a back-end developer.
+    </p>
+  </section>
+  <section class="skill-section">
+    <h2>Professionals</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3 class="skill-name">Agronomy and Horticulture</h3>
+        <p class="skill-description">
+          Solid backgrounds of collegue education, MS degree from NTU Bio-resource Academy and 4 years of job experience
+          in related industries.
+        </p>
+      </div>
+      <div class="skill">
+        <h3 class="skill-name">Communication</h3>
+        <p class="skill-description">
+          Experienced on inter-gorvernmental relations and cross-functional communications. Certified english skills and
+          years of multi-national meeting experience.
+        </p>
+      </div>
+      <div class="skill">
+        <h3 class="skill-name">Problem solving</h3>
+        <p class="skill-description">
+          Ability to find the critical step in fertilizer composting with self-taught R programming skills like data
+          analysis and machine learning.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="experience-section">
+    <h2 class="job-experience">Experience</h2>
+    <div class="experience">
+      <div class="experience-item">
+        <h3 class="job-title">Regulatory & Stewardship Specialist </h3>
+        <span class="company">
+          <i class="fa-solid fa-building"></i>
+          Corteva Agriscience Taiwan Co., Ltd.
+        </span>
+        <span class="duration">
+          <i class="fa-solid fa-calendar"></i>
+          2021.8 - now
+        </span>
+        <ul>
+          <li>
+            Set goals, arrange field trials, coordinate submissions of global new active Adavelt® and other fungicides.
+          </li>
+          <li>
+            Manage 30+ license renewal, sourcing and other actions according to global LER projects.
+          </li>
+          <li>
+            Build relations with government officials and customer while proactively leading coversations.
+          </li>
+        </ul>
+      </div>
+      <hr>
+      <div class="experience-item">
+        <h3 class="job-title">Import tolerance & Regulatory specialist</h3>
+        <span class="company">
+          <i class="fa-solid fa-building"></i>
+          BASF Taiwan CO., LTD.
+        </span>
+        <span class="duration">
+          <i class="fa-solid fa-calendar"></i>
+          2020.2 - 2021.8
+        </span>
+        <ul>
+          <li>
+            Product stewardship, dossier submission and license maintenance for Agriculture Solutions.
+          </li>
+          <li>
+            Regulatory advocacy with Croplife Asia and incident management with regulatory issue.
+          </li>
+          <li>
+            Managing the import tolerance application, risk-cup calculation and global negociation.
+          </li>
+        </ul>
+      </div>
+      <hr>
+      <div class="experience-item">
+        <h3 class="job-title">Field trial Manager</h3>
+        <span class="company">
+          <i class="fa-solid fa-building"></i>
+          TECHS TECH CO., LTD.
+        </span>
+        <span class="duration">
+          <i class="fa-solid fa-calendar"></i>
+          2018.10 - 2020.1
+        </span>
+        <ul>
+          <li>
+            Test the final product on over 15 kind of crops, analyze statistical results and complete the project
+            reports.
+          </li>
+          <li>
+            Optimize the gross product in economical way, including extruding granulation, detoxification by dunnage
+            modifying and formula calculation of compound fertilizers.
+          </li>
+          <li>
+            Analyze data from fermentation machine with BDA skill and report the insight.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="education-section">
+    <h2 class="education-history"> Education</h2>
+    <div class="educations">
+      <div class="MS-education">
+        <h3 class="education-title">Master of Horticulture and Landscape Architecture</h3>
+        <span class="facility">
+          <i class="fa-solid fa-school-flag"></i>
+          National Taiwan University (NTU)
+        </span>
+        <span class="duration">
+          <i class="fa-solid fa-calendar"></i>
+          2016.9 - 2018.7
+        </span>
+        <ul style="list-style:none">
+          <li>
+            GPA: 3.98/ 49 credits
+          </li>
+          <li>
+            Specialty: Plant Breeding, Hydroponic, Plant Physiology
+          </li>
+          <li>
+            Scholarship: Know-you Social Welfare Foundation Scholarship
+          </li>
+          <li>
+            Thesis: Effect of Nutrient Temperature on Growth and Development of Hydroponic Netted Melon
+          </li>
+        </ul>
+      </div>
+      <hr>
+      <div class="BH-education">
+        <h3 class="education-title">Bachelor of Horticulture</h3>
+        <span class="facility">
+          <i class="fa-solid fa-school-flag"></i>
+          National Chung Hsing University (NCHU)
+        </span>
+        <span class="duration">
+          <i class="fa-solid fa-calendar"></i>
+          2012.9 - 2016.7
+        </span>
+        <ul style="list-style:none">
+          <li>
+            GPA: 3.85/ 154 credits
+          </li>
+          <li>
+            Internship:
+          </li>
+          <ul>
+            <li>
+              Yu, Su-May's lab, the Institute of Molecular Biology, Academia Sinica
+            </li>
+            <li>
+              Wang, Yu-Hua's lab, Taiwan Agriculture Research Institute, Council of Agriculture
+            </li>
+          </ul>
+          <li>
+            Extra Curriculum:
+          </li>
+          <ul>
+            <li>
+              Minister of Activities, Student Association of Horticulture Department, NCHU
+            </li>
+            <li>
+              Deputy Director, International Agriculture Service Mission, NCHU
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="certificate-section">
+    <h2 class="skills-and-certs">
+      Certificates
+    </h2>
+    <div class="certificates">
+      <div class="certificate">
+        <h3 class="certificate-name">
+          Languages
+        </h3>
+        <ul class="certificate-discription">
+          <li>
+            Mandarin: ★★★★★
+          </li>
+          <li>
+            English: ★★★★
+          </li>
+          <ul style="list-style:none">
+            <li>
+              TOEIC: 910/990
+            </li>
+            <li>
+              IELTS: 6.5
+            </li>
+          </ul>
+          <li>
+            Taiwanese: ★★
+          </li>
+        </ul>
+      </div>
+      <div class="certificate">
+        <h3 class="certificate-name">
+          Programming
+        </h3>
+        <ul>
+          <li>
+            <a href="https://www.udemy.com/certificate/UC-BZGC34LL/" target="_blank" class="programming-cert">Data Science and Machine Learning
+              Bootcamp with R</a>
+          </li>
+          <li>
+            <a href="https://www.udemy.com/certificate/UC-82FXKNGJ/" target="_blank" class="programming-cert">R Programming: Advanced Analytics
+              In R For Data Science</a>
+          </li>
+          <li>
+            <a href="https://www.udemy.com/certificate/UC-VNS3F0R3/" target="_blank" class="programming-cert">R Programming A-Z™: R For Data
+              Science With Real Exercises!</a>
+          </li>
+          <li>
+            <a href="https://lighthouse.alphacamp.co/certificates/9fdcdbf7-f374-4a21-9217-8e976c838b6d"
+              target="_blank" class="programming-cert">Intro course of full stack development program</a>
+          </li>
+        </ul>
+      </div>
+      <div class="certificate">
+        <h3 class="certificate-name">
+          Agriculture
+        </h3>
+        <ul>
+          <li>
+            Level C technician for Horticulture
+          </li>
+          <li>
+            Pesticide Manager
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="CV.js"></script>
+</body>
+</html>

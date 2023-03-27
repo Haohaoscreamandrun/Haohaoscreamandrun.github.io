@@ -1,0 +1,269 @@
+html,
+body {
+  /*   html refer to all content, larger than body */
+  font-family: "Lato", "Noto Sans TC", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  background-color: #f3f3f3;
+  /*   outline: 3px solid tomato; */
+  /*   There are default font and style for certain tag, adjust margin, padding, font color and backgrond color here */
+}
+
+/* header */
+header {
+  /*   outline: 3px solid tomato; */
+  height: 60px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  color: #666666;
+}
+
+nav {
+  /*   outline: 3px solid tomato; */
+  height: 100%;
+  max-width: 840px;
+  /*   區塊型元素的預設寬度都是 100% 佔滿一行，如果寬度佔滿的話根本無法做置中效果，所以起手式要先設寬度，這裡可以用 max-width，如果用 width 屬性會直接把寬度寫死，用 max-width 元素會保留原汁原味的 width 預設值，但不會超過最大寬度。 */
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  /*   可以套用多種屬性 把容器變成 flex 容器 */
+  align-items: center;
+  /*   垂直置中 */
+  justify-content: space-between;
+  /*   水平分散 */
+}
+
+.nav-title {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #666666;
+}
+
+/* Main */
+
+main {
+  /*   outline: 3px solid tomato; */
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 24px 0 8px;
+  /*   套用到所有h2並且上留24下留8左右不留 */
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+h2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #ff6600;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+h2:hover:before,
+h2:hover:before,
+h2:hover:before {
+  right: 0;
+}
+
+h3 {
+  font-size: 21px;
+  margin: 0 0 8px;
+  font-weight: 500;
+  color: #333;
+  background-image: linear-gradient(90deg, #ff6600, #333);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  transition: all 0.25s ease;
+}
+
+h3:hover {
+  background-size: 100% 100%;
+  color: transparent;
+}
+
+p,
+ul {
+  color: #666666;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+.avatar {
+  text-align: center;
+  /*   把div.avatar內的圖片視為一個文字，並要求文字置中排列 */
+  /*   用框線可以看出div很寬，他置中沒有幫助 */
+}
+
+.avatar-img {
+  /*   border: 10px double #ff6600; */
+  /*   border-radius: 25px; */
+  border-radius: 50%;
+  /*   50%代表面積占總一半，此時為圓形 */
+}
+
+.avatar-img:hover {
+  border: #ff6600 10px solid;
+}
+
+
+.name {
+  text-align: center;
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+.social-media {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social-media-link {
+  color: #999999;
+  text-decoration: none;
+  /*  去除底線  */
+  margin: 0 5px;
+  font-size: 20px;
+  border-radius: 25%;
+  width: 25px;
+  /*   Or use "fa lg" at the end of HTML class */
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  /* background: #e1e1e1; */
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.social-media-link:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ff6600;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.social-media-link:hover,
+.social-media-link:focus,
+.social-media-link:active {
+  /* color: #ff6600; */
+  color: white;
+}
+
+.social-media-link:hover:before,
+.social-media-link:focus:before,
+.social-media-link:active:before {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+div.title {
+  margin-bottom: 20px;
+  text-align: center;
+  /* 內容置中 */
+  font-size: 14px;
+  letter-spacing: 2px;
+  /* 字元間距 */
+  color: #ff6600;
+}
+
+/* skill-section */
+.skills,
+.certificates {
+  /*   outline: 2px solid tomato; */
+  display: flex;
+  /*   因為 flex 排列的預設狀態就是水平排列，注意每個子元素是緊貼，而且容器的空間被全部分配： */
+  justify-content: space-between;
+}
+
+.skill,
+.certificate {
+  /*   outline: 2px solid blue; */
+  width: 30%;
+}
+
+.skill-name,
+.certificate-name {
+  border-top: 1px solid #999999;
+  padding-top: 16px;
+}
+
+/* experience section */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #cccccc;
+  /* 讓背景色填滿高度 1px 的元素空間 */
+  margin: 20px;
+  /*   hr預設是用border做的，相較之下比較怪 */
+}
+
+.company,
+.facility,
+.duration {
+  color: #666666;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.fa-building,
+.fa-school-flag,
+.fa-calendar {
+  margin-right: 5px;
+}
+
+.programming-cert {
+  color: #333333;
+  text-decoration: none;
+}
+
+.programming-cert:hover {
+  color: #ff6600;
+  transition: all .25s;
+}
