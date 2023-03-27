@@ -86,10 +86,9 @@ experience.innerHTML = experienceRender(expArray);
 })
 })
 
-['mouseout','touchend'].forEach(fire=>{
-  personalInfo.addEventListener(fire, event => {
+
+  personalInfo.addEventListener('mouseout', event => {
   if (event.target.classList[0] === "avatar-img") {
     originalName();
   }
-})
 })
